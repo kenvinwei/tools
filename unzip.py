@@ -28,4 +28,4 @@ if __name__ == '__main__':
             tmp.write(filedata)
             tmp.close()
         print 'Exacting %s ... done!'% (name_utf8)
-    zip_obj.close()
+    zip_obj.close() 
