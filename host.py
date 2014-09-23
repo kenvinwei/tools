@@ -18,6 +18,7 @@ def warnString():
 			warnstr += "\t["+str(i+1)+"]:"+listfile[i]+"\n";
 	return warnstr;
 def writeHost(filepath):
+	 os.chmod( hostpath , stat.S_IWOTH+stat.S_IWUSR+stat.S_IWGRP );
 	 shutil.copy(filepath, hostpath)
 	 print("copy\t"+filepath+"\tsuccess!")
 def run():
